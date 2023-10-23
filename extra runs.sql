@@ -1,5 +1,5 @@
 select d.bowling_team,
-sum(d.extra_runs) -sum(legbye_runs)-sum(bye_runs) 
+sum(d.extra_runs)
 from deliveries d 
 inner join matches m 
 on d.match_id=m.id 
